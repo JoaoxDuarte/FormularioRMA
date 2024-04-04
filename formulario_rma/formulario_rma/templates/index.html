@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}
+{{"Formulário de Registro Mensal de Atendimentos"|upper }}
+{% endblock title %}
+{% block body %}
+<form action={{'send_form_'|add:tipo_unidade}} method="POST" onkeydown="return event.key != 'Enter';" id="index_form">
+
+    {% csrf_token %}
+    {% include "DadosCras.html" with CRAS=user_cras id_cras=id_cras_user mes_ano=mes_ano_user endereco=endereco_user municipio=municipio_user uf=uf_user %}
+    <form action='send_form' method="POST">
+        {% csrf_token %}
+        <div class='mx-xl-5 mx-xxl-5 mx-2'>
+            {% for title, bloco in perguntas_json.items %}
+            {% include "rowbloco1.html" with Title=bloco.Title rowpayload=bloco.childs%}
+
+            {% endfor %}
+        </div>
+        {% comment %} {% include "rowbloco1.html" with Title=perguntas_json.B.Title %}
+        {% include "rowbloco1.html" with Title=perguntas_json.C.Title %}
+        {% include "rowbloco1.html" with Title=perguntas_json.D.Title %} {% endcomment %}
+        {% include "dados_servidor.html" with nome_servidor='Nome' matricula_servidor='Matrícula' cargo_servidor='Cargo' %}
+        {% include "enviarbutton.html" %}
+    </form>
+    <script type="text/javascript">
+        let form_data = "{{ form_data }}";
+        if (form_data) {
+            form_data = form_data.replace(/(&quot\;)/g, "\"")
+            let form_data_json = JSON.parse(form_data);
+
+            //We are using metaprogramming here
+            //We are pretty much defining an interface by using strings
+            //This of course is terrible, but...
+            const form = FormAdapter.fromDomainJson(form_data_json)
+            FormPresenter.fromForm(form)
+
+
+            const botao_enviar = document.getElementById("enviar");
+            botao_enviar.style.visibility = 'hidden';
+            botao_enviar.remove()
+
+
+            const button_voltar = document.createElement("button");
+            button_voltar.classList.add("border")
+            button_voltar.classList.add("border-0")
+            button_voltar.classList.add("rounded")
+            button_voltar.classList.add("col-1")
+            button_voltar.classList.add("bg-primary")
+            button_voltar.classList.add("text-light")
+            button_voltar.innerHTML = "Voltar";
+
+            const button_div = document.querySelector('#button_div');
+            button_voltar.style.height = "5vh";
+            button_voltar.style.width = "15vw"
+            button_div.appendChild(button_voltar);
+
+            const index_form = document.getElementById("index_form")
+            console.log("index_form____________________________")
+            console.log(index_form)
+            index_form.action = '../rmaAdmin'
+
+        }
+
+
+
+
+
+    </script>
+    {% endblock body %}

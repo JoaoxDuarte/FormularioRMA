@@ -1,0 +1,65 @@
+{
+    "BlocoI": {
+        "Title": "Bloco I – Serviço Especializado para Pessoas em Situação de Rua",
+        "childs": [
+            {
+                "Title": "A - Pessoas em situação de rua atendidas no Serviço durante o mês de referência",
+                "childs": {
+                    "A1": {
+                        "5col": "Quantidade e perfil das pessoas em situação de rua atendidas no mês de referência"
+                    }
+                }
+            },
+            {
+                "Title": "B - Características específicas identificadas em pessoas atendidas no Serviço durante o mês de referência",
+                "childs": {
+                    "B1": "Pessoas usuárias de crack ou outras drogas ilícitas",
+                    "B2": "Migrantes",
+                    "B3": "Pessoas com doença ou transtorno mental"
+                }
+            },
+            {
+                "Title": "C - Cadastramento de pessoas em situação de rua durante o mês de referência",
+                "childs": {
+                    "C1": "Pessoas que foram incluídas no Cadastro Único para Programas Sociais, no mês",
+                    "C2": "Pessoas que realizaram atualização do Cadastro Único para Programas Sociais, no mês"
+                }
+            },
+            {
+                "Title": "D - Volume total de atendimentos realizados no mês de referência",
+                "childs": {
+                    "D1": "Quantidade total de atendimentos realizados (compreendida como a soma do número de atendimentos realizados a cada dia, durante o mês de referência)"
+                }
+            }
+        ]
+    },
+    "BlocoII": {
+        "Title": "Bloco II - Serviço Especializado em Abordagem Social no Centro POP",
+        "childs": [
+            {
+                "Title": "E - Quantidade e perfil de pessoas abordadas pela equipe do Serviço de Abordagem, no mês de referência",
+                "childs": {
+                    "E1": {
+                        "4col": "Quantidade de pessoas abordadas pelo Serviço de Abordagem Social, durante o mês de referência"
+                    }
+                }
+            },
+            {
+                "Title": "Situações identificadas pelo Serviço Especializado em Abordagem Social, no mês de referência",
+                "childs": {
+                    "E2": "Crianças ou adolescentes em situação de trabalho infantil (até 15 anos)",
+                    "E3": "Crianças ou adolescentes em situação de exploração sexual",
+                    "E4": "Crianças ou adolescentes usuárias de crack ou outras drogas",
+                    "E5": "Pessoas adultas usuárias de crack ou outras drogas ilícitas",
+                    "E6": "Migrantes"
+                }
+            },
+            {
+                "Title": "F - Volume de abordagens realizadas",
+                "childs": {
+                    "F1": "Quantidade total de abordagens realizadas (compreendida como o número de pessoas abordadas, multiplicado pelo número de vezes em que foram abordadas durante o mês)"
+                }
+            }
+        ]
+    }
+}

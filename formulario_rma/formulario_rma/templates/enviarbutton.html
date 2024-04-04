@@ -1,0 +1,37 @@
+<div class="row  mb-6 mx-xl-5 px-xl-3 mx-sm-1 px-sm-1 mt-4 d-flex justify-content-center">
+    <!-- Button trigger modal -->
+    <div class="text-center" id="button_div">
+        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            id="enviar">
+            ENVIAR
+        </button>
+        <p class="text-danger" style="font-size:small; margin-top: 10px; margin-bottom:0;">É necessário o preenchimento
+            de todos
+            os
+            campos</p>
+        <p class="text-danger" style="font-size:small;">para o envio dos dados</p>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ATENÇÃO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p style="font-size:16px;">Tem certeza que deseja enviar os dados do formulário?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class=" btn btn-success border border-0 rounded bg-success text-light" id="">
+                        <p class="m-1" style="font-size:12px;">SIM</p>
+                    </button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                        <p class="m-1" style="font-size:12px;">NÃO</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,178 @@
+{
+    "BlocoI": {
+        "Title": "Bloco I - Serviço de Proteção e Atendimento Especializado a Famílias e Indivíduos - PAEFI",
+        "childs": [
+            {
+                "Title": "A - Volume de famílias em acompanhamento pelo PAEFI",
+                "childs": {
+                    "A1": "Total de casos (famílias ou indivíduos) em acompanhamento pelo PAEFI",
+                    "A2": "Novos casos (famílias ou indivíduos) inseridos no acompanhamento do PAEFI durante o mês de referência"
+                }
+            },
+            {
+                "Title": "B -  Perfil dos novos casos inseridos no acompanhamento do PAEFI no mês de referência",
+                "childs": {
+                    "B1": "Famílias beneficiárias do Programa Bolsa Família",
+                    "B2": "Famílias com membros beneficiários do BPC",
+                    "B3": "Famílias com crianças ou adolescentes em situação de trabalho infantil",
+                    "B4": "Famílias com crianças ou adolescentes em Serviços de Acolhimento",
+                    "B5": "Famílias cuja situação de violência/ violação esteja associada ao uso abusivo de substâncias psicoativas",
+                    "B7": "Famílias com adolescente em cumprimento de Medidas Socioeducativas em meio aberto"
+                }
+            },
+            {
+                "Title": "Quantidade e perfil das pessoas vítimas de violência ou violações de direitos que ingressaram no PAEFI, durante o mês de referência (apenas indivíduos inseridos no acompanhamento no mês de referência)",
+                "childs": {
+                    "B6": {
+                        "4col": "Quantidade de pessoas vitimadas, que ingressaram no PAEFI, durante o mês de referência (apenas para os novos casos)"
+                    }
+                }
+            },
+            {
+                "Title": "C - Crianças ou adolescentes em situações de violência ou violações, que ingressaram no PAEFI durante o mês de referência",
+                "childs": {
+                    "C1": {
+                        "3col": "Crianças ou adolescentes vítimas de violência intrafamiliar (física ou psicológica)"
+                    },
+                    "C2": {
+                        "3col": "Crianças ou adolescentes vítimas de abuso sexual"
+                    },
+                    "C3": {
+                        "3col": "Crianças ou adolescentes vítimas de exploração sexual"
+                    },
+                    "C4": {
+                        "3col": "Crianças ou adolescentes vítimas de negligência ou abandono"
+                    }
+                }
+            },
+            {
+                "Title": "Crianças ou adolescentes em situação de Trabalho Infantil, que ingressaram no PAEFI durante o mês de referência",
+                "childs": {
+                    "C5": {
+                        "2col": "Crianças ou adolescentes em situação de trabalho infantil (até 15 anos)"
+                    }
+                }
+            },
+            {
+                "Title": "D -  Idosos - 60 anos ou mais - em situações de violência ou violações que ingressaram no PAEFI durante o mês de referência",
+                "childs": {
+                    "D1": {
+                        "1col": "Pessoas idosas vítimas de violência intrafamiliar (física, psicológica ou sexual)"
+                    },
+                    "D2": {
+                        "1col": "Pessoas idosas vítimas de negligência ou abandono"
+                    }
+                }
+            },
+            {
+                "Title": "E -  Pessoas com deficiência, em situações de violência ou violações, que ingressaram no PAEFI durante o mês de referência",
+                "childs": {
+                    "E1": {
+                        "4col": "Pessoas com deficiência vítimas de violência intrafamiliar (física, psicológica ou sexual)"
+                    },
+                    "E2": {
+                        "4col": "Pessoas com deficiência vítimas de negligência ou abandono"
+                    }
+                }
+            },
+            {
+                "Title": "F -  Mulheres adultas vítimas de violência intrafamiliar que ingressaram no PAEFI durante o mês de referência",
+                "childs": {
+                    "F1": "Mulheres adultas (18 a 59 anos) vítimas de violência intrafamiliar (física, psicológica ou sexual)"
+                }
+            },
+            {
+                "Title": "G -  Pessoas vítimas de tráficos de seres humanos que ingressaram no PAEFI durante o mês de referência",
+                "childs": {
+                    "G1": {
+                        "4col": "Pessoas vítimas de tráficos de seres humanos"
+                    }
+                }
+            },
+            {
+                "Title": "H -  Pessoas vítimas de discriminação por orientação sexual que ingressaram no PAEFI durante o mês de referência",
+                "childs": {
+                    "H1": "Pessoas vítimas de discriminação por orientação sexual"
+                }
+            },
+            {
+                "Title": "I -  Pessoas em situação de rua que ingressaram no PAEFI durante o mês de referência",
+                "childs": {
+                    "I1": {
+                        "4col": "Pessoas em situação de rua"
+                    }
+                }
+            }
+        ]
+    },
+    "BlocoII": {
+        "Title": "Bloco II - Atendimentos realizados no CREAS",
+        "childs": [
+            {
+                "Title": "M - Atendimentos realizados no mês de referência",
+                "childs": {
+                    "M1": "Total de atendimentos individualizados realizados no mês de referência",
+                    "M2": "Total de atendimentos em grupo realizados no mês de referência",
+                    "M3": "Famílias encaminhadas para o CRAS durante no mês de referência",
+                    "M4": "Visitas domiciliares realizadas no mês de referência"
+                }
+            }
+        ]
+    },
+    "BlocoIII": {
+        "Title": "Bloco III - Serviço de Proteção Social a Adolescente em Cumprimento de Medida Socioeducativa (LA/PSC)",
+        "childs": [
+            {
+                "Title": "J - Volume de adolescentes em cumprimento de Medidas Socioeducativas",
+                "childs": {
+                    "J1": "Total de adolescentes em cumprimento de Medidas Socioeducativas (LA e/ou PSC)",
+                    "J2": "Quantidade de adolescentes em cumprimento de Liberdade Assistida - LA",
+                    "J3": "Quantidade de adolescentes em cumprimento de Prestação de Serviços à Comunidade - PSC"
+                }
+            },
+            {
+                "Title": "Quantidade e perfil dos novos adolescentes inseridos no Serviço, no mês de referência",
+                "childs": {
+                    "J4": {
+                        "0col": "Total de novos adolescentes em cumprimento de Medidas Socioeducativas (LA e/ou PSC), inseridos em acompanhamento no mês de referência"
+                    },
+                    "J5": {
+                        "0col": "Novos adolescentes em cumprimento de LA, inseridos em acompanhamento, no mês de referência"
+                    },
+                    "J6": {
+                        "0col": "Novos adolescentes em cumprimento de PSC, inseridos em acompanhamento, no mês de referência"
+                    }
+                }
+            }
+        ]
+    },
+    "BlocoIV": {
+        "Title": "Bloco IV - Serviço Especializado em Abordagem Social",
+        "childs": [
+            {
+                "Title": "K -  Quantidade e perfil de pessoas abordadas pela equipe do Serviço de Abordagem, no mês de referência",
+                "childs": {
+                    "K1": {
+                        "4col": "Pessoas abordadas pelo Serviço de Abordagem Social, durante o mês de referência"
+                    }
+                }
+            },
+            {
+                "Title": "Situações identificadas pelo Serviço Especializado em Abordagem Social, no mês de referência",
+                "childs": {
+                    "K2": "Crianças ou adolescentes em situação de trabalho infantil (até 15 anos)",
+                    "K3": "Crianças ou adolescentes em situação de exploração sexual",
+                    "K4": "Crianças ou adolescentes usuárias de crack ou outras drogas",
+                    "K5": "Pessoas adultas usuárias de crack ou outras drogas ilícitas",
+                    "K6": "Migrantes"
+                }
+            },
+            {
+                "Title": "L - Volume de abordagens realizadas",
+                "childs": {
+                    "L1": "Quantidade total de abordagens realizadas (compreendida como número de pessoas abordadas, multiplicado pelo número de vezes em que foram abordadas durante o mês)"
+                }
+            }
+        ]
+    }
+}

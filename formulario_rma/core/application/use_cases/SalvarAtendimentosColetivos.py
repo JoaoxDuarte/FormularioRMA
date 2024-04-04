@@ -1,0 +1,12 @@
+from formulariorma.formulario_rma.core.domain.entities.VolumeServicosConvivenciaEFortalecimentoVinculos import VolumeServicosConvivenciaEFortalecimentoVinculosDeFamiliasPAIF
+from formulariorma.formulario_rma.core.domain.repositories.repository_VolumeServicosConvivenciaEFortalecimentoVinculos import RepositoryVolumeServicosConvivenciaEFortalecimentoVinculos
+
+
+class SalvarAtendimentosColetivos:
+    def __init__(self, salvar_atendimentos_coletivos: RepositoryVolumeServicosConvivenciaEFortalecimentoVinculos):
+        self.salvar_atendimentos_coletivos = salvar_atendimentos_coletivos
+
+    def run(self, volume_servico: VolumeServicosConvivenciaEFortalecimentoVinculosDeFamiliasPAIF):
+        return self.salvar_atendimentos_coletivos.recuperar_volume_servico_convivencia_e_fortalecimento_vinculos(volume_servico)
+
+

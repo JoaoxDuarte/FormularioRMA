@@ -1,0 +1,39 @@
+{% load util %}
+<div class="row mx-0 mx-xl-4 mx-xxl-5">
+    <span class="border border-primary border-1 align-middle mb-5">
+        <div class="mb-4 text-primary">
+            <div class="position-relative pb-4 mb-3">{% include "blocovaluetitulo.html" with Title=Title %}</div>
+            <div class="mb-2 mx-xl-5 px-xl-2 mx-sm-1 px-sm-1 justify-content-center mt-2 mb-2">
+                {% for topico in rowpayload %}
+                    {% include "blocotopico.html" with Value=topico.Title %}
+                    {% for question_name, question_text in topico.childs.items %}
+                        {% if question_text|get_type == 'str' %}
+                            {% include "row_question.html" with question_name=question_name question_text=question_text %}
+                        {% else %}
+                            {% for format, text in question_text.items %}
+                                {% if format == '5col' %}
+                                    {% include "novo_bloco-5col copy.html" with question_name=question_name question_text=text %}
+                                {% endif %}
+                                {% if format == '4col' %}
+                                    {% include "novo_bloco-4col copy.html" with question_name=question_name question_text=text %}
+                                {% endif %}
+                                {% if format == '3col' %}
+                                    {% include "novo_bloco-3col.html" with question_name=question_name question_text=text %}
+                                {% endif %}
+                                {% if format == '2col' %}
+                                    {% include "novo_bloco-2col copy.html" with question_name=question_name question_text=text %}
+                                {% endif %}
+                                {% if format == '1col' %}
+                                    {% include "novo_bloco-1Col copy.html" with question_name=question_name question_text=text %}
+                                {% endif %}
+                                {% if format == '0col' %}
+                                    {% include "novo_bloco-0Col copy.html" with question_name=question_name question_text=text %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+    </span>
+</div>

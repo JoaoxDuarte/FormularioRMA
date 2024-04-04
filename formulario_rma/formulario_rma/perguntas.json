@@ -1,0 +1,62 @@
+{
+    "BlocoI": {
+        "Title": "Bloco I - Famílias em acompanhamento pelo PAIF",
+        "childs": [
+            {
+                "Title": "A - Volume de famílias em acompanhamento pelo PAIF",
+                "childs": {
+                    "A1": "Total de famílias em acompanhamento pelo PAIF",
+                    "A2": "Novas famílias inseridas no acompanhamento do PAIF durante o mês de referência"
+                }
+            },
+            {
+                "Title": "B - Perfil das novas famílias inseridas em acompanhamento no PAIF, no mês de referência",
+                "childs": {
+                    "B1": "Famílias em situação de extrema pobreza",
+                    "B2": "Famílias beneficiárias do programa Bolsa Família",
+                    "B3": "Famílias beneficiárias do programa Bolsa Família, em descumprimento de condicionalidades",
+                    "B4": "Famílias com membros beneficiários do BPC",
+                    "B5": "Famílias com crianças ou adolescentes em situação de trabalho infantil",
+                    "B6": "Famílias com crianças ou adolescentes em serviço de acolhimento"
+                }
+            }
+        ]
+    },
+    "BlocoII": {
+        "Title": "Bloco II - Atendimento particularizados realizados no CRAS",
+        "childs": [
+            {
+                "Title": "C - Volume de atendimentos particularizados no CRAS no mês de referência",
+                "childs": {
+                    "C1": "Total de atendimentos particularizados realizados, no mês",
+                    "C2": "Famílias encaminhadas para inclusão no cadastro único",
+                    "C3": "Famílias encaminhadas para atualização cadastral no cadastro único",
+                    "C4": "Indivíduos encaminhados para acesso ao BPC",
+                    "C5": "Famílias encaminhadas para o CREAS",
+                    "C6": "Visitas domiciliares realizadas",
+                    "C7": "Total de auxílios-natalidade concedidos/entregues durante o mês de referência",
+                    "C8": "Total de auxílios-funeral concedidos/entregues durante o mês de referência",
+                    "C9": "Outros benefícios eventuais concedidos/entregues durante o mês de referência"
+                }
+            }
+        ]
+    },
+    "BlocoIII": {
+        "Title": "Bloco III - Atendimentos coletivos realizados no CRAS",
+        "childs": [
+            {
+                "Title": "Volume dos serviços de convivência e fortalecimento de vínculos, no mês de referência",
+                "childs": {
+                    "D1": "Famílias participando regularmente de grupos no âmbito do PAIF",
+                    "D2": "Crianças de 0 a 6 anos em serviços de convivência e fortalecimento de vínculos",
+                    "D3": "Crianças/adolescentes de 7 a 14 anos em Serv. de Convivência e Fortalecimento de vínculos",
+                    "D4": "Adolescentes de 15 a 17 anos em serviços de convivência e fortalecimento de vínculos",
+                    "D5": "Idosos em serviços de convivência e fortalecimento de vínculos para idosos",
+                    "D6": "Pessoas que participaram de palestras, oficinas e outras atividades coletivas de caráter não continuado",
+                    "D7": "Pessoas com deficiência, participando dos serviços de convivência ou dos grupos do paif",
+                    "D8": "Adultos entre 18 e 59 anos em serviços de convivência e fortalecimento de vínculos"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,2 @@
+class ResponsavelNaoSeEncontraLotadoNoCrasException(Exception):
+    pass

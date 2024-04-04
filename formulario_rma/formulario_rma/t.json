@@ -1,0 +1,133 @@
+{
+    "codigo_cras": 33,
+    "dados_Paif": {
+        "_state": {
+            "adding": false,
+            "db": "default",
+            "fields_cache": {}
+        },
+        "id": 284,
+        "novas_familias_bolsa_familia": 3,
+        "novas_familias_bolsa_familia_em_descomprimento": 3,
+        "novas_familias_criancas_adolescentes_acolhimento": 3,
+        "novas_familias_criancas_adolescentes_trabalho": 3,
+        "novas_familias_em_situacao_de_extrema_pobreza": 3,
+        "novas_familias_membros_bpc": 3,
+        "total_de_familias_em_acompanhamento_PAIF": 500,
+        "total_de_novas_familias_PAIF": 3,
+        "volume_convivencia_e_fortalecimento_de_vinculos_id": 68
+    },
+    "mes_referencia": "Novembro",
+    "nome_cras": "responsavel_cras",
+    "responsavel_cras": {
+        "_state": {
+            "adding": false,
+            "db": "default"
+        },
+        "cargo": null,
+        "email_funcional": "igor.costa@sedes.df.gov.br",
+        "id": 93,
+        "id_unidade": 1,
+        "matricula": 4,
+        "nome": "Nome do responsavel"
+    },
+    "volume_atendimento_particularizado": {
+        "_state": {
+            "adding": false,
+            "db": "default"
+        },
+        "familias_encaminhadas_atualizacao_cadunico_mes": 2,
+        "familias_encaminhadas_inclusao_atualizacao_cadunico_mes": 2,
+        "familias_encaminhadas_inclusao_cadunico_mes": 2,
+        "familias_encaminhadas_para_creas": 2,
+        "id": 158,
+        "individuos_encaminhados_para_bpc": 2,
+        "outros_beneficios_concedidos": 2,
+        "total_atendimento_particularizado_mes": 5,
+        "total_auxilio_funeral_concedido": 2,
+        "total_auxilio_natalidade_concedido": 2,
+        "visitas_domiciliares_realizadas": 2
+    },
+    "volume_servicoes_convivencia_e_fortalecimentoVinculosDeFamiliasPAIF": {
+        "_state": {
+            "adding": false,
+            "db": "default"
+        },
+        "adolescenete_15_a_17_no_servico": 2,
+        "adultos_18_a_59_servicos": 2,
+        "criancas_adolescente_7_a_14_no_servico": 2,
+        "criancas_adolescentes_0_6_anos_no_servico": 2,
+        "familias_participando_regularmente_de_grupos_no_ambito_PAIF": 2,
+        "id": 67,
+        "idosos_servico": 2,
+        "pessoas_com_deficiencia_servico": 2,
+        "pessoas_que_participaram_de_atividades": 2,
+        "total_familias_PAIF": 500
+    }
+}{
+    "codigo_cras": 3,
+    "dados_Paif": {
+        "_state": {
+            "adding": false,
+            "db": "default",
+            "fields_cache": {}
+        },
+        "id": 285,
+        "novas_familias_bolsa_familia": 3,
+        "novas_familias_bolsa_familia_em_descomprimento": 3,
+        "novas_familias_criancas_adolescentes_acolhimento": 3,
+        "novas_familias_criancas_adolescentes_trabalho": 3,
+        "novas_familias_em_situacao_de_extrema_pobreza": 3,
+        "novas_familias_membros_bpc": 3,
+        "total_de_familias_em_acompanhamento_PAIF": 500,
+        "total_de_novas_familias_PAIF": 3,
+        "volume_convivencia_e_fortalecimento_de_vinculos_id": 70
+    },
+    "mes_referencia": "Novembro",
+    "nome_cras": "responsavel_cras",
+    "responsavel_cras": {
+        "_state": {
+            "adding": false,
+            "db": "default"
+        },
+        "cargo": null,
+        "email_funcional": "igor.costa@sedes.df.gov.br",
+        "id": 94,
+        "id_unidade": 1,
+        "matricula": 4,
+        "nome": "Nome do responsavel"
+    },
+    "volume_atendimento_particularizado": {
+        "_state": {
+            "adding": false,
+            "db": "default"
+        },
+        "familias_encaminhadas_atualizacao_cadunico_mes": 2,
+        "familias_encaminhadas_inclusao_atualizacao_cadunico_mes": 2,
+        "familias_encaminhadas_inclusao_cadunico_mes": 2,
+        "familias_encaminhadas_para_creas": 2,
+        "id": 159,
+        "individuos_encaminhados_para_bpc": 2,
+        "outros_beneficios_concedidos": 2,
+        "total_atendimento_particularizado_mes": 50,
+        "total_auxilio_funeral_concedido": 2,
+        "total_auxilio_natalidade_concedido": 2,
+        "visitas_domiciliares_realizadas": 2
+    },
+    "volume_servicoes_convivencia_e_fortalecimentoVinculosDeFamiliasPAIF": {
+        "_state": {
+            "adding": false,
+            "db": "default"
+        },
+        "adolescenete_15_a_17_no_servico": 2,
+        "adultos_18_a_59_servicos": 2,
+        "criancas_adolescente_7_a_14_no_servico": 2,
+        "criancas_adolescentes_0_6_anos_no_servico": 2,
+        "familias_participando_regularmente_de_grupos_no_ambito_PAIF": 2,
+        "id": 69,
+        "idosos_servico": 2,
+        "pessoas_com_deficiencia_servico": 2,
+        "pessoas_que_participaram_de_atividades": 2,
+        "total_familias_PAIF": 500
+    }
+}

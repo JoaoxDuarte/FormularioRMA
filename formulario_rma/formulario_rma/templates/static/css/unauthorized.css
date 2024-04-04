@@ -1,0 +1,57 @@
+html,body{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(63, 147, 196);
+
+
+}
+
+.key {
+    transform: translateY(150px);
+    animation: popup 10s 6.5s ease infinite;
+  }
+
+p
+{
+    font-size: 30px;
+    margin-bottom: 75px;
+    margin-top:15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white
+}
+h1
+{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+    color: white;
+}
+.svg-key
+{
+    animation-name: swing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width:600px;
+    height: auto;
+    display:block;
+    margin:auto;
+    animation-fill-mode: forwards;          
+
+}
+
+.svg-key:hover
+{
+    animation-play-state:running;     
+        
+}
+
+@keyframes swing { 
+    20% { transform: rotate(15deg); } 
+    40% { transform: rotate(-10deg); } 
+    60% { transform: rotate(5deg); } 
+    80% { transform: rotate(-5deg); } 
+    100% { transform: rotate(0deg); } 
+ } 

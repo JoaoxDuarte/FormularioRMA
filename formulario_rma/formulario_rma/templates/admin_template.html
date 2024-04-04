@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Registro Mensal de Atendimentos CRAS: Template do Administrador -->
+
+<head>
+    <title>Registro Mensal de Atendimentos do CRAS</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://www.freeiconspng.com/thumbs/screens-png/computer-screens-png-12.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css"
+        integrity="sha512-mR/b5Y7FRsKqrYZou7uysnOdCIJib/7r5QeJMFvLNHNhtye3xJp1TdJVPLtetkukFn227nKpXD9OjUc09lx97Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"
+        integrity="sha512-FHZVRMUW9FsXobt+ONiix6Z0tIkxvQfxtCSirkKc5Sb4TKHmqq1dZa8DphF0XqKb3ldLu/wgMa8mT6uXiLlRlw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/multi-select-tag.css' %}">
+    <link rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-image: url("{%static 'images/background_template_admin.png'%}");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        text-align: center;
+    }
+    form {
+        text-align: center;
+        margin: 0 auto; 
+    
+    }
+
+
+
+  
+</style>
+
+<body>
+    <div class=" bg-primary text-center"
+        style="height: 120px; font-family:Arial , Helvetica, sans-serif; font-weight:bold">
+        <br>
+        <br>
+        <h2 style="color:rgb(255, 255, 255);"><b>REGISTRO MENSAL DE ATENDIMENTOS</b></h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h6 class=" text-center" style="color:rgb(61, 61, 61);"><b>Selecione o tipo de equipamento:</b></h6>
+    <div check style="align-items: center">
+      
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="option_radio" id="cras_radio" value="cras_radio">
+                <label class="form-check-label" for="exampleRadios1">
+                    CRAS
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="option_radio" id="creas_radio" value="creas_radio" disabled>
+                <label class="form-check-label" for="exampleRadios2">
+                    CREAS
+                </label>
+            </div>
+{% for title, bloco in perguntas_json.items %}
+    {% include "rowbloco1.html" with Title=bloco.Title rowpayload=bloco.childs%}
+        
+    {% endfor %}            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="option_radio" id="centro_pop_radio" disabled
+                    value="radio_centro_pop">
+                <label class="form-check-label" for="exampleRadios3">
+                    CENTRO POP
+                </label>
+            </div>
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p class="text-center text-primary m-4" style="font-size:30px">Gestão de Formulários RMA:</p>
+
+    
+        <!-- <div style="height: 3vh" class='bg-light col-6 border'> -->
+
+            <form class="forms" action="/formulario" method="get">
+                <div>
+                    <label  for="unidade">Selecione a unidade:</label>
+                    <br>
+                    <h5 class="title" id="cras_title"> CRAS</h5>
+                    
+                    <select name="dados_cras" id="dados_cras" multiple>
+                        {% for result_unidade in result_unidades_cras %}
+                        <option value="{{result_unidade.id_unidade}}">CRAS {{result_unidade.nome}}</option>
+                        {% endfor %}
+                    </select>
+                    <br> 
+
+                    <h5 class="title" id="creas_title"> CREAS</h5>
+                    <select name="dados_creas" id="dados_creas" multiple>
+                        {% for result_unidade in result_unidades_creas %}
+                        <option value="{{result_unidade.id_unidade}}">CREAS {{result_unidade.nome}}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+                    <h5 class="title" id="centro_pop_title"> CENTRO POP</h5>
+                    <select name="dados_centro_pop" id="dados_centro_pop" multiple>
+                        {% for result_unidade in result_unidades_cp %}
+                        <option value="{{result_unidade.id_unidade}}">CENTRO POP {{result_unidade.nome}}</option>
+                        {% endfor %}
+                    </select><br>
+                </div>
+            </form>
+
+
+
+                <p class="text-center text-primary mt-3 " style="font-size:16px">Selecione as unidades que deseja
+                    enviar.
+                </p>
+                <br>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#admin_confirmar_modal">
+                    <p class="m-2" style="font-size:17px;">ENVIAR</p>
+                </button>
+                <div class="col text-center mb-4">
+                    <div class="modal fade" id="admin_confirmar_modal" tabindex="-1" aria-labelledby="admin_confirmar_modal" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="admin_confirmar_modal">ATENÇÃO</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p style="font-size:16px;">Tem certeza que deseja enviar os dados para o ministério da cidadania?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <form action="" method="POST" id="enviar_form">
+                                    {% csrf_token %} 
+                                    <input type="hidden" name="select" value="cras" /> 
+                                    <input type="hidden" name="id_list" value="" id="id_list"/>
+                                        <button type="submit" class="btn btn-success">
+                                            <p class="m-1" style="font-size:12px;">SIM</p>
+                                        </button>
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><p class="m-1" style="font-size:12px;">NÃO</p></button>
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+
+</body>
+
+
+<script src="{% static '/js/multi-select-tag-.js' %}"></script>
+<script src="{% static '/js/select-unidade.js' %}"></script>
+<script>
+    new MultiSelectTag('dados_creas')  // id
+    new MultiSelectTag('dados_cras')  // id
+    new MultiSelectTag('dados_centro_pop')  // id
+</script>
+<html>

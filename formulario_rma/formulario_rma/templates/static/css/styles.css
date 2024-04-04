@@ -1,0 +1,118 @@
+.button_custom {
+    padding: 0%;
+    font-size: 0.5em;
+
+}
+
+.tooltip-inner {
+    font-size: 5rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media (max-width: 600px) {
+    .only-icon-small {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 709px) {
+    .only-button-small {
+        display: none;
+    }
+}
+
+@media (min-width: 707px) {
+    .only-button-small {
+        display: flex;
+    }
+}
+
+@media (max-width: 709px) {
+    .only-button-center {
+        display: none;
+    }
+}
+
+@media (max-width: 709px) {
+    .only-button-center {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 460px) {
+    .only-center {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 376px) {
+    .text {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 465px) {
+    .text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 465px) and (min-width: 376px) {
+    .text {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 550px) {
+    .text small {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 415px) {
+    .form-control {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .form-control {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 788px) {
+    .only-render-big {
+        display: none;
+    }
+}
+
+@media (min-width: 788px) {
+    .only-render-big {
+        display: flex;
+    }
+}
+
+@media (min-width: 787px) {
+    .only-render-small {
+        display: none;
+    }
+}
+
+@media (max-width: 787px) {
+    .only-render-small {
+        display: flex;
+    }
+}

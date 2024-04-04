@@ -1,0 +1,2 @@
+class ResponsavelNaoEGerenteException(Exception):
+    pass

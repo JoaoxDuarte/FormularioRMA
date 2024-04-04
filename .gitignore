@@ -1,0 +1,10 @@
+# dados do banco
+.env
+
+# arquivo temporario pytho
+*.pyc
+
+*.sqlite3
+.vscode/
+
+*.log
